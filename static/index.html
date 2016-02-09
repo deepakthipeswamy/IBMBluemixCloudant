@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Python Flask Starter Application</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="static/stylesheets/style.css">
+   </head>
+   <body>
+      <table>
+         <tr>
+            <td style= "width:30%;">
+               <img class = "newappIcon" src="static/images/newapp-icon.png">
+            <td>
+               <h1><span class = "blue">Assignment 2</span></h1>
+               <h2><span class = "red">Upload</span></h1>
+               <form action="upload" method="post" enctype="multipart/form-data">
+                  <input type="file" name="myfile"/><br>
+                  <br>
+                  <input type="submit" name="submit" value="Upload" />
+               </form>
+               <br>
+               <h2><span class = "red">Download/Delete</span></h1>
+               <form action="action" method="post" enctype="multipart/form-data">
+                  Filename: <input type="text" name="Filename" required><br>
+                  Version : <input type="text" name="Version" required>
+                  <br>
+                  <br>
+                  <input type="submit" name="submit" value="Download">
+                  <input type="submit" name="submit" value="Delete">
+               </form>
+               <br>
+                <h2><span class = "red">List all files</span></h1>
+               <form action="list" method="post" enctype="multipart/form-data">
+                    List all Files : <input type="submit" name="submit" value="List all Files">
+               </form>
+      </table>
+   </body>
+</html>
